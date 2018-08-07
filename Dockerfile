@@ -1,3 +1,3 @@
 
 FROM scratch
-CMD ["echo custom hello"]
+CMD ["echo custom hello.."]
