@@ -26,7 +26,10 @@ RUN apt-get update && \
 RUN octave --eval 'pkg install -forge control signal'
 
 RUN conda config --add channels conda-forge && \
-    conda install octave_kernel
+    conda install octave_kernel && \
+    conda clean -tipsy && \
+    fix-permissions $CONDA_DIR && \
+    fix-permissions /home/$NB_USER
 
 RUN rm -rf /tmp/* /var/tmp/*
 
