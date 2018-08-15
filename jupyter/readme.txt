@@ -1,11 +1,14 @@
-jupyter including kernels for:
+jupyter (lab) including kernels for:
 
 - R
-- python
+- python2
+- python3
 - julia
 - octave
+- gnuplot
 
 And, some other tools:
 
 - gcc
-- gnuplot
+- nb_conda
+- nb_conda_kernels
