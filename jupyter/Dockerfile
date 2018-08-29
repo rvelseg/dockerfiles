@@ -14,7 +14,7 @@ RUN apt-get update && \
         octave liboctave-dev \
         gnuplot-x11 \
         libopenblas-base libatlas3-base \
-        ghostscript pstoedit python3-pip \
+        ghostscript pstoedit python3-pip less \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN octave --eval 'pkg install -forge control signal'
